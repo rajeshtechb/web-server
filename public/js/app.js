@@ -1,11 +1,4 @@
 
-
-console.log('Cleint side java script loaded')
-
-
-
-
-
 const formSelector = document.querySelector('form')
 
 const search = document.querySelector('input')
