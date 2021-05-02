@@ -5,6 +5,8 @@ const hbs = require('hbs')
 const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
+const port = process.env.PORT || 3000
+
 
 const app = express()
 
@@ -70,6 +72,6 @@ app.get('*',(req,res) =>{
     res.send('404 Page not found')
 })
 
-app.listen(4000, ()=>{
-    console.log('Sever is listening 4000')
+app.listen(port, ()=>{
+    console.log('Sever is listening '+port)
 })
